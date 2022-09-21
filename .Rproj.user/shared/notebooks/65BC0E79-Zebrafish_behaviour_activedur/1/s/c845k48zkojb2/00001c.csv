@@ -1,0 +1,7 @@
+"0","# before running this chunk, rename the .csv file containing the raw behavioural data, seperated by and underscore: all groups (nr4aWT, nr4bWT, ...) "
+"0","fileNames <- list.files(""Data"") #Get the name of each .csv file"
+"0","genotypeNames <- str_split(string = fileNames[2], pattern = "".csv"", simplify = TRUE)[,1] #Identify the genotypes included in the files"
+"0","genotypeNames <- str_split(string = genotypeNames, pattern = ""_"")[[1]] #Genotype Names are seperated by underscores int he file name"
+"0","metaData <- read.csv(file = ""Data/MetaData.csv"") #Import the Meta Data that includes information about the data"
+"0","#CAS is the Chemical Abstract Service, MOA is the Mode of Action. This table includes useful information about the exposure concentrations for each chemical dose in mg/L. We'll use this later to create our final data frame"
+"0","metaData"

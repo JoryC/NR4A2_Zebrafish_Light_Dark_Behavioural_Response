@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+<link href="lib/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+</head>
+<body>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; "><table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>Table 2 - ANOVA test p-values after FDR adjustment, comparing effects of different genotypes on activedur for each light cycle</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> Df </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> Sum_Sq </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> Mean_Sq </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> F_Value </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> P_value </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> is_sig </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Light_1_Genotype </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2091.685 </td>
+   <td style="text-align:right;"> 1045.84240 </td>
+   <td style="text-align:right;"> 5.768671 </td>
+   <td style="text-align:left;"> 3.36e-03 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Light_1_Residuals </td>
+   <td style="text-align:right;"> 440 </td>
+   <td style="text-align:right;"> 79770.656 </td>
+   <td style="text-align:right;"> 181.29694 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dark_1_Genotype </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1184.033 </td>
+   <td style="text-align:right;"> 592.01653 </td>
+   <td style="text-align:right;"> 7.529800 </td>
+   <td style="text-align:left;"> 6.11e-04 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dark_1_Residuals </td>
+   <td style="text-align:right;"> 427 </td>
+   <td style="text-align:right;"> 33572.082 </td>
+   <td style="text-align:right;"> 78.62314 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Light_2_Genotype </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1117.234 </td>
+   <td style="text-align:right;"> 558.61689 </td>
+   <td style="text-align:right;"> 3.807947 </td>
+   <td style="text-align:left;"> 2.29e-02 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Light_2_Residuals </td>
+   <td style="text-align:right;"> 457 </td>
+   <td style="text-align:right;"> 67040.833 </td>
+   <td style="text-align:right;"> 146.69766 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dark_2_Genotype </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2227.920 </td>
+   <td style="text-align:right;"> 1113.95983 </td>
+   <td style="text-align:right;"> 11.639202 </td>
+   <td style="text-align:left;"> 1.17e-05 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dark_2_Residuals </td>
+   <td style="text-align:right;"> 457 </td>
+   <td style="text-align:right;"> 43738.362 </td>
+   <td style="text-align:right;"> 95.70758 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Light_3_Genotype </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 6585.692 </td>
+   <td style="text-align:right;"> 3292.84599 </td>
+   <td style="text-align:right;"> 20.140452 </td>
+   <td style="text-align:left;"> 4.30e-09 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Light_3_Residuals </td>
+   <td style="text-align:right;"> 436 </td>
+   <td style="text-align:right;"> 71283.448 </td>
+   <td style="text-align:right;"> 163.49415 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dark_3_Genotype </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4835.991 </td>
+   <td style="text-align:right;"> 2417.99572 </td>
+   <td style="text-align:right;"> 22.322608 </td>
+   <td style="text-align:left;"> 5.75e-10 </td>
+   <td style="text-align:left;"> TRUE </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dark_3_Residuals </td>
+   <td style="text-align:right;"> 447 </td>
+   <td style="text-align:right;"> 48419.256 </td>
+   <td style="text-align:right;"> 108.32048 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+</tbody>
+</table></div> <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})</script><script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

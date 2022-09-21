@@ -1,0 +1,101 @@
+"0","library(knitr)"
+"0","library(kableExtra)"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
+"
+"0","library(gridExtra)"
+"0","library(rlang)"
+"0","library(DescTools)"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"0","library(plyr)"
+"0","library(ggplot2)"
+"0","library(dplyr)"
+"2","
+Attaching package: ‘dplyr’
+
+"
+"2","The following objects are masked from ‘package:plyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise, summarize
+
+"
+"2","The following object is masked from ‘package:gridExtra’:
+
+    combine
+
+"
+"2","The following object is masked from ‘package:kableExtra’:
+
+    group_rows
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","library(tidyr)"
+"0","library(readr)"
+"0","library(stringr)"
+"0","library(tibble)"
+"0","library(data.table)"
+"2","data.table 1.14.2 using 3 threads (see ?getDTthreads).  Latest news: r-datatable.com
+"
+"2","
+Attaching package: ‘data.table’
+
+"
+"2","The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+"
+"2","The following object is masked from ‘package:DescTools’:
+
+    %like%
+
+"
+"2","The following object is masked from ‘package:rlang’:
+
+    :=
+
+"
+"0","library(car)"
+"2","Loading required package: carData
+"
+"2","
+Attaching package: ‘car’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    recode
+
+"
+"2","The following object is masked from ‘package:DescTools’:
+
+    Recode
+
+"
+"0","library(lazyeval)"
+"2","
+Attaching package: ‘lazyeval’
+
+"
+"2","The following objects are masked from ‘package:rlang’:
+
+    as_name, call_modify, call_standardise, expr_label, expr_text, f_env, f_env<-, f_label, f_lhs, f_lhs<-, f_rhs, f_rhs<-, f_text,
+    is_atomic, is_call, is_formula, is_lang, is_pairlist, missing_arg
+
+"

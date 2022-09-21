@@ -1,0 +1,7 @@
+"0","d %>%"
+"0","  select(-Measurement) %>%"
+"0","  mutate(is_sig = if_else(condition = P_value <= 0.05, true = TRUE, false= FALSE),"
+"0","         P_value = formatC(P_value, format = ""e"", digits = 2)) %>%"
+"0","  kable(caption = paste(""Table 2 - ANOVA test p-values after FDR adjustment, comparing effects of different genotypes on"", params$value, ""for each light cycle"")) %>%"
+"0","  kable_styling(full_width = TRUE) %>%"
+"0","  scroll_box(height = ""400px"")"
