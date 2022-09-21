@@ -1,3 +1,0 @@
-"0","raw_data %>%"
-"0","  select(Treatment, an, end, smldist, lardist, emptyct, emptydur) %>%"
-"0","  head()"

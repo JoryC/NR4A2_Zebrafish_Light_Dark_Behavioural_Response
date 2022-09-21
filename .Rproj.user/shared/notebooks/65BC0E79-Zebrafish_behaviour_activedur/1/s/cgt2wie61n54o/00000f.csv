@@ -1,4 +1,0 @@
-"0","# raw_data <- raw_data %>%"
-"0","#   filter(Treatment != is.na(Treatment))"
-"0","# nrow(raw_data)"
-"0","# identical(as.numeric(nrow(raw_data)), (84 * 50 * 1)) # Does the expected number of rows match the observed number of rows after filtering?"

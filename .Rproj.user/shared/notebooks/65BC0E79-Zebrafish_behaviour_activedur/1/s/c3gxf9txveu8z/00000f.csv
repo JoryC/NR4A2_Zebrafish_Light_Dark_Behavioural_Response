@@ -1,8 +1,0 @@
-"0","NAObservations <- raw_data %>%"
-"0","  filter(poorQual == TRUE) %>% # Filter only rows with poor quality that have behavioural endpoint observations turned to NAs"
-"0","  nrow()"
-"0","NAObservations"
-"1","[1]"
-"1"," 620"
-"1","
-"
