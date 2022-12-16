@@ -343,7 +343,7 @@ fishBehavDat <- raw_data %>%
   ) %>%
   inner_join(metaData) %>%
   mutate(Treatment = str_remove_all(Treatment, "[0-9.-]+$")) %>%
-  mutate(Genotype = if_else(condition = is.na(Subtype), true = paste(Genotype), false = paste(Genotype, Subtype))) %>%
+  mutate(Genotype = if_else(condition = is.na(Subtype), true = paste(Genotype), false = paste(Subtype, Genotype))) %>%
   select(animal, Treatment, Genotype, Subtype, time_end, inact, smlct, larct, inadur, smldur, lardur, activedur, smldist, lardist, totaldist, emptydur, velocity, poorQual)
 ```
 
@@ -459,7 +459,8 @@ cycle_filter <- c("Light_1",
       "Dark_2",
       "Light_3",
       "Dark_3")
-GenotypeNames <- c("WT", "KO A", "KO B")
+GenotypeNames <- c("WT", "nr4a2a KO", "nr4a2b KO")
+set.seed(42)
 
 dun_list <- NULL
 dun_list_2 <- NULL
@@ -712,7 +713,7 @@ d %>%
 ```{r 38Dunnetts_test, echo=FALSE}
 cycle_filter <- c("Light", "Dark")
 
-GenotypeNames <- c("WT", "KO A", "KO B")
+GenotypeNames <- c("WT", "nr4a2a KO", "nr4a2b KO")
 
 dun_list <- NULL
 dun_list_2 <- NULL
